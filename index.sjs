@@ -38,7 +38,8 @@ sortTheList{
     }
     for(person of list){
         bday = new Date(person[1])
-        output.element.innerHTML += "<br>"+person[0] + " - " + bday.getMonth() + "/" + bday.getDay() + "/" + bday.getFullYear()
+        think(bday)
+        output.element.innerHTML += "<br>"+person[0] + " - " + (bday.getMonth()+1) + "/" + bday.getDate() + "/" + bday.getFullYear()
     }
 }
 
